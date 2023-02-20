@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Fri Aug  5 09:51:11 2022
+
+# Make data base, printed on Mon Feb 20 09:13:17 2023
 
 # Variables
 
@@ -16,7 +19,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-NVM_INC = /Users/jonathanlathrop/.nvm/versions/node/v16.13.2/include/node
+NVM_INC = /Users/jonathanlathrop/.nvm/versions/node/v18.13.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -42,23 +45,29 @@ VSCODE_CWD = /
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
-PATH = /Users/jonathanlathrop/.nvm/versions/node/v16.13.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+PATH = /Users/jonathanlathrop/go/bin:/Users/jonathanlathrop/.nvm/versions/node/v18.13.0/bin:/Users/jonathanlathrop/wasm/emsdk:/Users/jonathanlathrop/wasm/emsdk/upstream/emscripten:/Users/jonathanlathrop/wasm/emsdk/node/14.18.2_64bit/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/jonathanlathrop/.cargo/bin
 # environment
 GOPATH = /Users/jonathanlathrop/go
 # environment
-NVM_BIN = /Users/jonathanlathrop/.nvm/versions/node/v16.13.2/bin
+NVM_BIN = /Users/jonathanlathrop/.nvm/versions/node/v18.13.0/bin
+# environment
+EMSDK_NODE = /Users/jonathanlathrop/wasm/emsdk/node/14.18.2_64bit/bin/node
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.m1lDJLnwQa/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZjAT95pDe6/Listeners
 # automatic
 %F = $(notdir $%)
+# environment
+SSL_CERT_FILE = /Users/jonathanlathrop/wasm/emsdk/python/3.9.2_64bit/lib/python3.9/site-packages/certifi/cacert.pem
 # environment
 PWD = /Users/jonathanlathrop/simplebank
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+EMSDK_PYTHON = /Users/jonathanlathrop/wasm/emsdk/python/3.9.2_64bit/bin/python3
 # environment
 GOMODCACHE = /Users/jonathanlathrop/go/pkg/mod
 # environment
@@ -66,11 +75,11 @@ HOME = /Users/jonathanlathrop
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/jonathanlathrop/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/jonathanlathrop/Library/Application Support/Code/CachedData/441438abd1ac652551dbe4d408dfcec8a499b8bf
 # environment
 LOGNAME = jonathanlathrop
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 NVM_CD_FLAGS = -q
 # environment
@@ -102,7 +111,7 @@ TMPDIR = /var/folders/9v/gm1clp3j2qq95m6jyxxtygj00000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/jonathanlathrop/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/jonathanlathrop/Library/Application Support/Code/1.75.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -114,7 +123,7 @@ MFLAGS = -Rrqp
 # environment
 NVM_DIR = /Users/jonathanlathrop/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.8610033.8610039
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.16843517.16843523
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -140,9 +149,11 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 65872
+EMSDK = /Users/jonathanlathrop/wasm/emsdk
+# environment
+VSCODE_PID = 80655
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=2/89=2%
+# Load=69/1024=7%, Rehash=0, Collisions=2/93=2%
 
 # Pattern-specific Variable Values
 
@@ -150,9 +161,9 @@ VSCODE_PID = 65872
 
 # Directories
 
-# . (device 16777223, inode 8637800): 9 files, no impossibilities.
+# . (device 16777223, inode 8637800): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -270,8 +281,6 @@ migratedown:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Aug  5 09:51:11 2022
+# Finished Make data base on Mon Feb 20 09:13:17 2023
 
  
-make: *** No rule to make target `all'.  Stop.
-
